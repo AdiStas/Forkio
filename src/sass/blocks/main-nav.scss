@@ -1,0 +1,169 @@
+.page-header {
+	margin-bottom: 40px;
+}
+
+.main-nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.main-nav__wrapper {
+	flex-basis: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin: 0 10px;
+	padding: 20px 10px;
+}
+
+.main-logo {
+	width: 100px;
+	height: 27px;
+}
+
+.page-header__buy-button {
+	padding: 10px 20px;
+
+	font-family: 'montserratbold';
+	font-size: 10px;
+	line-height: 11px;
+	font-weight: bold;
+
+	border-radius: 20px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #8d81ac;
+}
+
+.main-nav__toggle {
+	padding: 0;
+
+	position: relative;
+	
+	width: 44px;
+	height: 24px;
+
+	border: none;
+	border-left: 1px solid #f4f4f4;
+	background-color: transparent;
+
+	cursor: pointer;
+}
+
+.main-nav--closed .main-nav__toggle:before {
+	content: "";
+
+	position: absolute;
+	top: 4px;
+	right: 0px;
+
+	width: 14px;
+	height: 3px;
+
+	background-color: #000;
+}
+
+.main-nav--closed .main-nav__toggle:after {
+	content: "";
+
+	position: absolute;
+	top: 11px;
+	right: 0px;
+
+	width: 20px;
+	height: 3px;
+
+	background-color: #000;
+	box-shadow: 0 7px 0 0 #000;
+}
+
+.main-nav--opened .main-nav__toggle:before,
+.main-nav--opened .main-nav__toggle:after {
+	content: "";
+
+	position: absolute;
+	top: 2px;
+	right: 7px;
+
+	width: 3px;
+	height: 20px;
+
+	background-color: #000;
+}
+
+.main-nav--opened .main-nav__toggle::before {
+	transform: rotate(45deg);
+}
+
+.main-nav--opened .main-nav__toggle::after {
+	transform: rotate(-45deg);
+}
+
+.main-nav__list {
+	display: none;
+	flex-basis: 100%;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+
+	background-color: #333;
+}
+
+.main-nav--opened .main-nav__list {
+	display: block;
+
+	content: "";
+	position: absolute;
+	top: 70px;
+	left: 0;
+
+	width: 100%;
+}
+
+.site-list__item {
+	border-bottom: 1px solid rgba(129, 129, 129, 0.1);
+}
+
+.site-list__item a {
+	display: block;
+	padding-left: 20px;
+
+	font-size: 21px;
+	line-height: 70px;
+
+	color: #858585;
+	text-decoration: none;
+
+		&[href] {
+			color: #fff;
+		}
+
+		&[href]:hover,
+		&[href]:focus {
+			color: #8d81ac;
+		}
+
+		&[href]:active {
+			opacity: 0.3;
+		}
+}
+
+.item-menu {
+	display: flex;
+	flex-wrap: wrap;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+
+		& a {
+			padding-left: 20px;
+			padding-right: 10px;
+		}
+}

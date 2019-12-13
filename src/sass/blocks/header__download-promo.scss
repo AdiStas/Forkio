@@ -1,0 +1,100 @@
+.header__download-promo {
+	text-align: center;
+}
+
+.download__block {
+	background-image: url(/src/img/main-bg-mob.jpg);
+	background-color: #010005;
+	background-repeat: no-repeat;
+	background-size: 480px;
+	background-position: center -60px; 
+}
+
+.download__title {
+	display: block;
+	margin: 0;
+	margin-bottom: 20px;
+	padding-top: 80px;
+
+	font-family: 'montserratbold';
+	font-size: 54px;
+	line-height: 62px;
+	color: #fff;
+}
+
+.download__description {
+	margin: 0 10px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	line-height: 22px;
+
+	color: #8d81ac;
+}
+
+.download__description--version {
+	margin: 0;
+	padding-bottom: 410px;
+	font-size: 10px;
+	line-height: 14px;
+
+	color: #848e97;
+
+	text-transform: uppercase;
+}
+
+.download-link-wrapper {
+	margin-top: -20px;
+	margin-bottom: 40px;
+}
+
+.download__link {
+	display: block;
+
+	width: 220px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	padding: 13px 15px;
+
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	
+	color: #fff;
+	background-color: #8d81ac;
+}
+
+.download__conditions {
+	margin: 0;
+
+	font-size: 9px;
+	line-height: 10px;
+
+	color: #848e97;
+}
+
+.promo__block {
+	margin: 0 10px;
+}
+
+.promo__title {
+	display: block;
+	margin-bottom: 35px;
+
+	font-family: 'montserratbold';
+	font-size: 32px;
+	line-height: 36px;
+	text-transform: uppercase;
+
+	color: #635c73;
+}
+
+.promo__description {
+	margin: 0;
+	margin-bottom: 20px;
+
+	font-family: source_sans_proregular;
+	font-size: 12px;
+	line-height: 18px;
+}
