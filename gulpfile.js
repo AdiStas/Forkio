@@ -7,7 +7,7 @@ gulp.task('style', function () {
 	return gulp.src("src/sass/style.scss") 
 		.pipe(plumber())
 		.pipe(sass()) 
-		.pipe(gulp.dest('./css')) 
+		.pipe(gulp.dest('./src/css')) 
 		.pipe(browserSync.stream());
 });
 

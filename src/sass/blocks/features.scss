@@ -65,7 +65,7 @@
 	margin-left: 7%;
 	min-height: 580px;
 
-	background-image: url(/src/img/features-mob.png);
+	background-image: url('/src/img/features-mob.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 
@@ -76,7 +76,7 @@
 
 @media (min-width: 468px) {
 	.features__img {
-		background-image: url(/src/img/features-desktop.png);
+		background-image: url('/src/img/features-desktop.png');
 		background-size: cover;
 	}
 }

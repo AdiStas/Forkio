@@ -3,7 +3,7 @@
 }
 
 .download__block {
-	background-image: url(/src/img/main-bg-mob.jpg);
+	background-image: url('/src/img/main-bg-mob.jpg');
 	background-color: #010005;
 	background-repeat: no-repeat;
 	background-size: 480px;
@@ -50,7 +50,7 @@
 .download__link {
 	display: block;
 
-	width: 220px;
+	width: 80%;
 	margin: 0 auto;
 	margin-bottom: 10px;
 	border-radius: 20px;
@@ -97,4 +97,127 @@
 	font-family: source_sans_proregular;
 	font-size: 12px;
 	line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+	.download__block {
+		background-image: url('/src/img/main-bg-desktop.jpg');
+		background-size: 1380px;
+		background-position: top; 
+	}
+
+	.download__title {
+		margin-bottom: 30px;
+
+		font-size: 82px;
+		line-height: 86px;
+	}
+
+	.download__description {
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-bottom: 15px;
+
+		font-size: 24px;
+		line-height: 34px;
+	}
+
+	.download__description--version {
+		padding-bottom: 410px;
+
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.download-link-wrapper {
+		margin-top: -25px;
+		margin-bottom: 60px;
+	}
+
+	.download__link {
+		width: 390px;
+			
+		margin-bottom: 15px;
+		padding: 15px 15px;
+
+		font-size: 21px;
+		line-height: 22px;
+	}
+
+	.download__conditions {
+		font-size: 14px;
+		line-height: 15px;
+	}
+
+	.promo__block {
+		margin: 0 15px;
+	}
+
+	.promo__title {
+		margin-bottom: 45px;
+
+		font-size: 48px;
+		line-height: 50px;
+	}
+
+	.promo__description {
+		margin-bottom: 30px;
+
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.promo__github-buttons {
+		& img {
+			width: 365px;
+			height: 26px;
+		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.download__title {
+		padding-top: 100px;
+		margin-bottom: 15px;
+	}
+
+	.download__description {
+		margin-left: 300px;
+		margin-right: 300px;
+		margin-bottom: 10px;
+	}
+
+	.download__description--version {
+		padding-bottom: 535px;
+	}
+
+	.download-link-wrapper {
+		margin-bottom: 60px;
+	}
+
+	.download__link {
+		width: 390px;
+					
+		margin-bottom: 20px;
+		padding: 15px 2px;
+	}
+
+	.promo__block {
+		margin: 0 105px;
+	}
+
+	.promo__title {
+		margin-bottom: 23px;
+
+		font-size: 54px;
+		line-height: 56px;
+	}
+
+	.promo__description {
+		margin-bottom: 30px;
+		padding: 0 120px;
+
+		font-size: 21px;
+		line-height: 32px;
+	}
 }
