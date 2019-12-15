@@ -305,28 +305,28 @@ template {
 
 @font-face {
   font-family: 'montserratbold';
-  src: local("Montserrat"), url("/src/fonts/montserrat-bold-webfont.woff2") format("woff2");
+  src: local("Montserrat"), url("../../src/fonts/montserrat-bold-webfont.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'montserratregular';
-  src: local("Montserrat"), url("/src/fonts/montserrat-regular-webfont.woff2") format("woff2");
+  src: local("Montserrat"), url("../../src/fonts/montserrat-regular-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'source_sans_proregular';
-  src: local("Source Sans Pro"), url("/src/fonts/sourcesanspro-regular-webfont.woff2") format("woff2");
+  src: local("Source Sans Pro"), url("../../src/fonts/sourcesanspro-regular-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'source_sans_probold_italic';
-  src: local("Source Sans Pro"), url("/src/fonts/sourcesanspro-bolditalic-webfont.woff2") format("woff2");
+  src: local("Source Sans Pro"), url("../../src/fonts/sourcesanspro-bolditalic-webfont.woff2") format("woff2");
   font-weight: bold;
   font-style: italic;
   font-display: swap; }
@@ -530,7 +530,7 @@ img {
   text-align: center; }
 
 .download__block {
-  background-image: url("/src/img/main-bg-mob.jpg");
+  background-image: url("../../src/img/main-bg-mob.jpg");
   background-color: #010005;
   background-repeat: no-repeat;
   background-size: 480px;
@@ -606,7 +606,7 @@ img {
 
 @media (min-width: 660px) {
   .download__block {
-    background-image: url("/src/img/main-bg-desktop.jpg");
+    background-image: url("../../src/img/main-bg-desktop.jpg");
     background-size: 1380px;
     background-position: top; }
   .download__title {
@@ -724,7 +724,7 @@ img {
   margin-top: -500px;
   margin-left: 7%;
   min-height: 580px;
-  background-image: url("/src/img/features-mob.png");
+  background-image: url("../../src/img/features-mob.png");
   background-repeat: no-repeat;
   background-size: cover; }
   .features__img img {
@@ -732,5 +732,5 @@ img {
 
 @media (min-width: 468px) {
   .features__img {
-    background-image: url("/src/img/features-desktop.png");
+    background-image: url("../../src/img/features-desktop.png");
     background-size: cover; } }

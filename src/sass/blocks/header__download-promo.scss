@@ -3,7 +3,7 @@
 }
 
 .download__block {
-	background-image: url('/src/img/main-bg-mob.jpg');
+	background-image: url('../../src/img/main-bg-mob.jpg');
 	background-color: #010005;
 	background-repeat: no-repeat;
 	background-size: 480px;
@@ -101,7 +101,7 @@
 
 @media (min-width: $tablet-width) {
 	.download__block {
-		background-image: url('/src/img/main-bg-desktop.jpg');
+		background-image: url('../../src/img/main-bg-desktop.jpg');
 		background-size: 1380px;
 		background-position: top; 
 	}
