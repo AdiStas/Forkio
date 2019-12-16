@@ -109,10 +109,12 @@
 			<ul class="reviews-list">
 				<li class="reviews-list__item">
 					<blockquote class="reviews__item">
-						<img class="reviews__author--photo" src="src/img/review-author1.jpg" width="85" height="85" alt="reviews author photo">
-						<cite class="reviews__author--name">Steven Strange
-							<span class="no-mobile reviews__author--description">@DoctorS</span>
-						</cite>
+						<div class="reviews-item__title">
+							<img class="reviews__author--photo" src="src/img/review-author1.jpg" width="85" height="85" alt="reviews author photo">
+							<cite class="reviews__author--name">Steven Strange
+								<span class="reviews__author--description">@DoctorS</span>
+							</cite>
+						</div>
 						<p class="reviews__text">«Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.»
 							<span class="reviews__date">2 hours ago</span>
 						</p>
@@ -120,14 +122,27 @@
 				</li>
 				<li class="reviews-list__item">
 					<blockquote class="reviews__item">
-						<img class="reviews__author--photo" src="src/img/review-author2.jpg" width="85" height="85" alt="reviews author photo">
+						<img class="reviews__author--photo photo-circle" src="src/img/review-author2.jpg" width="85" height="85" alt="reviews author photo">
 						<cite class="reviews__author--name">Marry Smith
-							<span class="no-mobile reviews__author--description">@Pussy</span>
+							<span class="reviews__author--description">@Pussy</span>
 						</cite>
 						<p class="reviews__text">«Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 						consequat.»
 							<span class="reviews__date">5 hours ago</span>
+						</p>
+					</blockquote>
+				</li>
+				<li class="reviews-list__item">
+					<blockquote class="reviews__item">
+						<img class="reviews__author--photo photo-circle" src="src/img/review-author2.jpg" width="85" height="85" alt="reviews author photo">
+						<cite class="reviews__author--name">Amanda Stone
+							<span class="reviews__author--description">@AmaQueen</span>
+						</cite>
+						<p class="reviews__text">«Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.»
+							<span class="reviews__date">6 hours ago</span>
 						</p>
 					</blockquote>
 				</li>
@@ -137,16 +152,16 @@
 			<h2 class="visually-hidden">Follow us in social</h2>
 			<ul class="social-links__list">
 				<li class="social-links__item">
-					<a href="#">Github</a>
-					<span class="social-links__followers">7352 followers</span>
+					<a class="social-btn social-btn--github" href="#">Github</a>
+					<span class="social-links__followers">7352 Followers</span>
 				</li>
 				<li class="social-links__item">
-					<a href="#">Twitter</a>
-					<span class="social-links__followers">136312 followers</span>
+					<a class="social-btn social-btn--twitter" href="#">Twitter</a>
+					<span class="social-links__followers">136312 Followers</span>
 				</li>
 				<li class="social-links__item">
-					<a href="#">Facebook</a>
-					<span class="social-links__followers">218092 followers</span>
+					<a class="social-btn social-btn--facebook" href="#">Facebook</a>
+					<span class="social-links__followers">218092 Subscribers</span>
 				</li>
 			</ul>
 		</section>
@@ -181,8 +196,7 @@
 			</ul>
 		</section>
 		<section class="purchase">
-			<h2 class="visually-hidden">Subscription prices</h2>
-			<b class="purchase__title">Fork Subscription Pricing</b>
+			<h2 class="purchase__title">Fork Subscription Pricing</h2>
 			<ul class="purchase__list"> 
 				<li class="purchase-item">
 					<h4 class="purchase-item__head">Students</h4>
@@ -254,17 +268,17 @@
 				</ul>
 			</li>
 			<li class="footer-list__item">
-				<a href="tel:3475677890">347 567 78 90</a>
+				<a class="contact-tel" href="tel:3475677890">347 567 78 90</a>
 				<p class="time-for-a-call">Available at 12pm - 18pm</p>
 			</li>
 			<li class="footer-list__item">
-				<p class="city-name">New York, NY</p>
-				<p class="address">560 Judah St & 15th Ave, Apt 5<br>
+				<p class="footer-address--city">New York, NY</p>
+				<p class="footer-address">560 Judah St & 15th Ave, Apt 5<br>
 				San Francisco, CA, 230903</p>
 			</li>
 			<li class="footer-list__item">
-				<b>Info</b>
-				<p>Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex commodo consequat. Autem vel hendrerit iriure dolor in hendrerit.</p>
+				<b class="footer-info__title">Info</b>
+				<p class="footer-info__description">Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex commodo consequat. Autem vel hendrerit iriure dolor in hendrerit.</p>
 			</li>
 		</ul>
 	</footer>

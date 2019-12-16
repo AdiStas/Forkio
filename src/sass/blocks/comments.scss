@@ -1,0 +1,53 @@
+.comments {
+	padding: 0 10px;
+	
+	text-align: center;
+
+	color: #fff;
+	background-color: #4b3b4e;
+	background-image: url('../../src/img/price-bg1-mob.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
+.comments__title {
+	display: block;
+	padding-top: 60px;
+	margin-bottom: 20px;
+
+	font-family: 'montserratbold';
+	font-size: 32px;
+	line-height: 40px;
+}
+
+.comments__list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.comments-list__item {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 40px;
+
+	& img {
+		margin-bottom: 25px;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+		padding-bottom: 50px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	}
+}
+
+.comment__text {
+	margin: 0;
+
+	font-family: 'source_sans_probold_italic';
+	font-size: 11px;
+	line-height: 16px;
+}
