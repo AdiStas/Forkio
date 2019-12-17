@@ -36,6 +36,16 @@
 	text-decoration: none;
 	color: #fff;
 	background-color: #8d81ac;
+
+		&:hover,
+		&:focus {
+			color: #8d81ac;
+			background-color: #f4f4f4;
+		}
+
+		&:active {
+			opacity: 0.3;
+		}
 }
 
 .main-nav__toggle {
@@ -125,6 +135,23 @@
 	width: 100%;
 }
 
+.main-nav--opened .site-list__item--active {
+	position: relative;
+
+	&::before {
+		content: "";
+
+		position: absolute;
+		top: 20%;
+		left: 0;
+
+		width: 4px;
+		height: 40px;
+
+		background-color: #8d81ac;
+	}
+}
+
 .site-list__item {
 	border-bottom: 1px solid rgba(129, 129, 129, 0.1);
 }
@@ -165,6 +192,10 @@
 		& a {
 			padding-left: 20px;
 			padding-right: 10px;
+
+			&:hover {
+				transform: scale(1.2);
+			}
 		}
 }
 

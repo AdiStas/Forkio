@@ -12,31 +12,33 @@
 </head>
 <body>
 	<header class="page-header">
-		<nav class="main-nav main-nav--closed">
-			<div class="main-nav__wrapper">
-				<a class="page-header__logo">
-					<img class="page-header__logo-image main-logo" src="src/img/main-logo.png" width="153" height="41" alt="Forkio logo">
-				</a>
-				<a class="page-header__buy-button" href="#">Buy Now</a>
-				<button class="main-nav__toggle" type="button">
-					<span class="visually-hidden">Open menu</span>
-				</button>
-				<ul class="main-nav__list site-list">
-					<li class="site-list__item site-list__item--active"><a>Home</a></li>
-					<li class="site-list__item"><a href="#">Overview</a></li>
-					<li class="site-list__item"><a href="#">About Fork</a></li>
-					<li class="site-list__item"><a href="#">Buying Options</a></li>
-					<li class="site-list__item"><a href="#">Support</a></li>
-					<li class="site-list__item site-list__item--sub-menu"><a>Follow Us</a>
-						<ul class="item-menu">
-							<li><a href="#"><img src="src/img/git-mob-menu.png" width="32" height="32" alt="github logo"></a></li>
-							<li><a href="#"><img src="src/img/twitter-mob-menu.png" width="32" height="13" alt="twitter logo"></a></li>
-							<li><a href="#"><img src="src/img/facebook-mob-menu.png" width="16" height="32" alt="facebook logo"></a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</nav>
+		<div class="page-container">
+			<nav class="main-nav main-nav--closed">
+				<div class="main-nav__wrapper">
+					<a class="page-header__logo">
+						<img class="page-header__logo-image main-logo" src="src/img/main-logo.png" width="153" height="41" alt="Forkio logo">
+					</a>
+					<a class="page-header__buy-button" href="#">Buy Now</a>
+					<button class="main-nav__toggle" type="button">
+						<span class="visually-hidden">Open menu</span>
+					</button>
+					<ul class="main-nav__list site-list">
+						<li class="site-list__item site-list__item--active"><a>Home</a></li>
+						<li class="site-list__item"><a href="#features">Overview</a></li>
+						<li class="site-list__item"><a href="#reviews">About Fork</a></li>
+						<li class="site-list__item"><a href="#purchase">Buying Options</a></li>
+						<li class="site-list__item"><a href="#footer">Support</a></li>
+						<li class="site-list__item site-list__item--sub-menu"><a>Follow Us</a>
+							<ul class="item-menu">
+								<li><a href="#"><img src="src/img/git-mob-menu.png" width="32" height="32" alt="github logo"></a></li>
+								<li><a href="#"><img src="src/img/twitter-mob-menu.png" width="32" height="13" alt="twitter logo"></a></li>
+								<li><a href="#"><img src="src/img/facebook-mob-menu.png" width="16" height="32" alt="facebook logo"></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 		<section class="header__download-promo">
 			<h2 class="visually-hidden">Download app for Mac and Windows</h2>
 			<div class="download__block">
@@ -60,7 +62,7 @@
 
 	<main>
 		<h1 class="visually-hidden">Forkio application</h1>
-		<section class="features">
+		<section class="features" id="features">
 			<h2 class="visually-hidden">Features</h2>
 			<b class="features__title">&#60;Here is what you get&#62;</b>
 			<ul class="features__list">
@@ -104,7 +106,7 @@
 			<div class="features__img"></div>
 		</section>
 
-		<section class="reviews">
+		<section class="reviews" id="reviews">
 			<h2 class="visually-hidden">Users reviews</h2>
 			<ul class="reviews-list">
 				<li class="reviews-list__item">
@@ -153,15 +155,15 @@
 			<ul class="social-links__list">
 				<li class="social-links__item">
 					<a class="social-btn social-btn--github" href="#">Github</a>
-					<span class="social-links__followers">7352 Followers</span>
+					<span class="social-links__followers">7 352 Followers</span>
 				</li>
 				<li class="social-links__item">
 					<a class="social-btn social-btn--twitter" href="#">Twitter</a>
-					<span class="social-links__followers">136312 Followers</span>
+					<span class="social-links__followers">136 312 Followers</span>
 				</li>
 				<li class="social-links__item">
 					<a class="social-btn social-btn--facebook" href="#">Facebook</a>
-					<span class="social-links__followers">218092 Subscribers</span>
+					<span class="social-links__followers">218 092 Subscribers</span>
 				</li>
 			</ul>
 		</section>
@@ -195,59 +197,64 @@
 				</li>
 			</ul>
 		</section>
-		<section class="purchase">
-			<h2 class="purchase__title">Fork Subscription Pricing</h2>
-			<ul class="purchase__list"> 
-				<li class="purchase-item">
-					<h4 class="purchase-item__head">Students</h4>
-					<p class="purchase-item__value">$29</p>
-					<p class="purchase-item__term">per month</p>
-					<p class="purchase-item__features">Personal License</p>
-					<a class="purchase-item__button" href="#">Purchase</a>
-				</li>
-				<li class="purchase-item">
-					<h4 class="purchase-item__head">Professional</h4>
-					<p class="purchase-item__value">$59</p>
-					<p class="purchase-item__term">per month</p>
-					<p class="purchase-item__features">Personal License<br>
-					Email Support</p>
-					<a class="purchase-item__button" href="#">Purchase</a>
-				</li>
-				<li class="purchase-item">
-					<h4 class="purchase-item__head">Agency</h4>
-					<p class="purchase-item__value">$99</p>
-					<p class="purchase-item__term">per month</p>
-					<p class="purchase-item__features">1-12 Team Members<br>Phone Support</p>
-					<a class="purchase-item__button" href="#">Purchase</a>
-				</li>
-				<li class="purchase-item">
-					<h4 class="purchase-item__head">Enterprise</h4>
-					<p class="purchase-item__value">$159</p>
-					<p class="purchase-item__term">per month</p>
-					<p class="purchase-item__features">Unlimited Team Members<br>
-					24/7 Phone Support</p>
-					<a class="purchase-item__button" href="#">Purchase</a>
-				</li>
-			</ul>
-			<p class="purchase__description">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+		<section class="purchase" id="purchase">
+			<div class="page-container">
+				<h2 class="purchase__title">Fork Subscription Pricing</h2>
+				<ul class="purchase__list"> 
+					<li class="purchase-item">
+						<h4 class="purchase-item__head">Students</h4>
+						<p class="purchase-item__value">$29</p>
+						<p class="purchase-item__term">per month</p>
+						<p class="purchase-item__features">Personal License</p>
+						<a class="purchase-item__button" href="#">Purchase</a>
+					</li>
+					<li class="purchase-item">
+						<h4 class="purchase-item__head">Professional</h4>
+						<p class="purchase-item__value">$59</p>
+						<p class="purchase-item__term">per month</p>
+						<p class="purchase-item__features">Personal License<br>
+						Email Support</p>
+						<a class="purchase-item__button" href="#">Purchase</a>
+					</li>
+					<li class="purchase-item">
+						<h4 class="purchase-item__head">Agency</h4>
+						<p class="purchase-item__value">$99</p>
+						<p class="purchase-item__term">per month</p>
+						<p class="purchase-item__features">1-12 Team Members<br>Phone Support</p>
+						<a class="purchase-item__button" href="#">Purchase</a>
+					</li>
+					<li class="purchase-item">
+						<h4 class="purchase-item__head">Enterprise</h4>
+						<p class="purchase-item__value">$159</p>
+						<p class="purchase-item__term">per month</p>
+						<p class="purchase-item__features">Unlimited Team Members<br>
+						24/7 Phone Support</p>
+						<a class="purchase-item__button" href="#">Purchase</a>
+					</li>
+				</ul>
+				<p class="purchase__description">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+			</div>
 		</section>
 		<section class="subscribe">
-			<h2 class="visually-hidden">Subscribe form</h2>
-			<b class="subscribe__title">Subscribe To Stay In Touch</b>
-			<form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
-				<input type="text" placeholder="Email..." required>
-				<button class="subscribe__submit">Subscribe</button>
-			</form>
+			<div class="page-container subscribe__container">
+				<h2 class="visually-hidden">Subscribe form</h2>
+				<b class="subscribe__title">Subscribe To Stay In Touch</b>
+				<form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
+					<input type="text" placeholder="Email..." required>
+					<button class="subscribe__submit">Subscribe</button>
+				</form>
+			</div>
 		</section>
 	</main>
 
-	<footer class="page-footer">
+	<div class="page-container">
+	<footer class="page-footer" id="footer">
 		<ul class="footer-list">
-			<li class="footer-list__item">
+			<li class="footer-list__item footer-list__item--logo">
 				<img class="page-footer__logo-image main-logo" src="src/img/main-logo.png" width="153" height="41" alt="Forkio logo">
 				<p class="page-footer__logo-description">Lorem ipsum dolor sit amet, feugiat delicat liberavisse id cum no quo.</p>
 			</li>	
-			<li class="footer-list__item">
+			<li class="footer-list__item footer-list__item--nav">
 				<span class="footer-nav__title">Navigation</span>
 				<ul class="footer-nav__list">
 					<li class="footer-nav__item">
@@ -267,21 +274,20 @@
 					</li>
 				</ul>
 			</li>
-			<li class="footer-list__item">
+			<li class="footer-list__item  footer-list__item--address">
 				<a class="contact-tel" href="tel:3475677890">347 567 78 90</a>
 				<p class="time-for-a-call">Available at 12pm - 18pm</p>
-			</li>
-			<li class="footer-list__item">
 				<p class="footer-address--city">New York, NY</p>
 				<p class="footer-address">560 Judah St & 15th Ave, Apt 5<br>
 				San Francisco, CA, 230903</p>
 			</li>
-			<li class="footer-list__item">
+			<li class="footer-list__item footer-list__item--info">
 				<b class="footer-info__title">Info</b>
 				<p class="footer-info__description">Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex commodo consequat. Autem vel hendrerit iriure dolor in hendrerit.</p>
 			</li>
 		</ul>
 	</footer>
+	</div>
 
 	<script src="src/script.js"></script>
 

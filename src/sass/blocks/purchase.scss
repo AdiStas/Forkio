@@ -1,9 +1,13 @@
 .purchase {
-	padding: 40px 0 10px;
+	padding: 40px 10px 10px;
 
 	text-align: center;
 
 	background-color: #4b3b4e;
+	background-image: url('../../src/img/price-bg2-mob.png');
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 250px;
 }
 
 .purchase__title {
@@ -27,12 +31,27 @@
 }
 
 .purchase-item {
-	width: 60%;
+	width: 170px;
 	padding-bottom: 20px;
 	margin: 0 auto;
 	margin-bottom: 10px;
 
 	background-color: rgba(129, 129, 129, 0.1);
+
+		&:hover,
+		&:focus {
+			transform: scale(1.1);
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+			background-color: rgba(0, 0, 0, 0.11);
+  			opacity: 0.839;
+		}
+
+		&:hover .purchase-item__head,
+		&focus .purchase-item__head {
+			background-color: rgba(0, 0, 0, 0.1);
+  		}
 }
 
 .purchase-item__head {
@@ -106,6 +125,16 @@
 
 	text-decoration: none;
 	text-transform: uppercase;
+
+		&:hover,
+		&:focus {
+			color: #8d81ac;
+			background-color: #f4f4f4;
+		}
+
+		&:active {
+			opacity: 0.3;
+		}
 }
 
 .purchase__description {
@@ -119,4 +148,112 @@
 	line-height: 14px;
 
 	color: rgba(181, 172, 181, 0.8);
+}
+
+@media (min-width: $tablet-width) {
+	.purchase {
+		background-image: url('../../src/img/price-bg2-desktop.jpg');
+		background-size: auto;
+		background-position: center 250px;
+	}
+
+	.purchase__title {
+		margin-top: 20px;
+		margin-bottom: 30px;
+		padding: 0 20px;
+	
+		font-size: 48px;
+		line-height: 60px;
+	}
+
+	.purchase__list {
+		margin-bottom: 40px;
+	}
+
+	.purchase-item {
+		width: 260px;
+		padding-bottom: 40px;
+		margin-bottom: 15px;
+	}
+
+	.purchase-item__head {
+		margin-bottom: 40px;
+		padding: 30px 0;
+
+		font-size: 24px;
+		line-height: 26px;
+	}
+
+	.purchase-item__value {
+		font-size: 60px;
+		line-height: 90px;
+	}
+
+	.purchase-item__term {
+		font-size: 14px;
+		line-height: 30px;
+	}
+
+	.purchase-item__features {
+		margin-bottom: 60px;
+
+		font-size: 16px;
+		line-height: 32px;
+	}
+
+	.purchase-item__button {
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	.purchase__description {
+		margin-bottom: 35px;
+		padding: 0 50px;
+
+		font-size: 14px;
+		line-height: 21px;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.purchase {
+		margin-top: -3px;
+		padding-top: 60px;
+		
+		background-position: center;
+	}
+
+	.purchase__list {
+		width: 1110;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		margin: 0 105px 80px;
+		padding: 0 30px;
+	}
+
+	.purchase-item {
+		width: initial;
+		flex-basis: 255px;
+	
+			&:hover,
+			&:focus {
+				margin: 0 23px;
+			}
+	}
+
+	.purchase-item__head {
+		padding: 40px 0;
+	}
+
+	.purchase-item__features {
+		min-height: 80px;
+		margin-bottom: 20px;
+	}
+
+	.purchase__description {
+		margin: 0 230px 60px;
+		padding: 0 30px;
+	}
 }

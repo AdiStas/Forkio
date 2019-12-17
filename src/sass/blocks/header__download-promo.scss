@@ -63,6 +63,16 @@
 	
 	color: #fff;
 	background-color: #8d81ac;
+
+		&:hover,
+		&:focus {
+			color: #8d81ac;
+			background-color: #f4f4f4;
+		}
+
+		&:active {
+			opacity: 0.3;
+		}
 }
 
 .download__conditions {

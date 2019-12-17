@@ -1,4 +1,8 @@
 .subscribe {
+	background-color: #f4f4f4;
+}
+
+.subscribe__container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -6,8 +10,6 @@
 	margin-bottom: 30px;
 	padding: 0 10px;
 	padding-top: 40px;
-
-	background-color: #f4f4f4;
 }
 
 .subscribe__title {
@@ -37,6 +39,11 @@
 		border-radius: 50px;
 		color: #c8cbcf;
 		background-color: #fff;
+
+			&:hover,
+			&:focus {
+				outline-color: lightblue; 
+			}
 	} 
 
 	& .subscribe__submit {
@@ -51,5 +58,55 @@
 
 		color: #fff;
 		background-color: #8d81ac;
+
+			&:hover,
+			&:focus {
+				color: #8d81ac;
+				background-color: #f4f4f4;
+			}
+
+			&:active {
+				opacity: 0.3;
+			}
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.subscribe__title {
+		margin-bottom: 50px;
+
+		font-size: 30px;
+		line-height: 60px;
+	}
+
+	.subscribe__form {
+		width: 500px;
+		padding-bottom: 50px;
+
+		& input {
+			padding: 12px 20px;
+		
+			font-size: 14px;
+			line-height: 17px;	
+		} 
+
+		& .subscribe__submit {
+			
+			font-size: 13px;
+			line-height: 17px;
+		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.subscribe__container {
+		justify-content: space-between;
+		width: 1110px;
+		padding: 50px 135px 0; 
+		margin: 0 auto 80px;
+	}
+
+	.subscribe__title {
+		line-height: 30px;
 	}
 }
