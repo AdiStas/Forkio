@@ -116,29 +116,27 @@
 
 @media (min-width: $desktop-width) {
 	.features {
+		flex-direction: row-reverse;
+		justify-content: space-between;
 		margin-bottom: 60px;
 	}
 
-			.features__title {
-				padding: 45px 110px 60px;
+	.features__title {
+		flex-basis: 50%;
+		box-sizing: border-box;
+		padding: 0;
+		padding-top: 80px;
 
-				font-size: 48px;
-				line-height: 54px;
-			}
+		text-align: left;
+	}
 
-			.features-list__item {
-				width: 505px;
-				margin: 0 auto;
-				margin-bottom: 35px;
-			}
+	.features__list {
+		flex-basis: 50%;
+		padding: 105px 0 50px;
+	}
 
-			.description__title {
-				font-size: 16px;
-				line-height: 21px;
-			}
-
-			.description__text {
-				font-size: 14px;
-				line-height: 21px;
-			}
+	.features__img {
+		margin-top: -500px;
+		min-width: 50%;
+	}
 }
