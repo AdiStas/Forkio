@@ -3,17 +3,16 @@
 }
 
 .subscribe__container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-
 	margin-bottom: 30px;
 	padding: 0 10px;
 	padding-top: 40px;
+
+	text-align: center;
 }
 
 .subscribe__title {
-	margin-bottom: 40px;
+	display: block;
+	margin-bottom: 30px;
 
 	font-family: 'montserratbold';
 	font-size: 20px;
@@ -21,14 +20,15 @@
 }
 
 .subscribe__form {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	width: 100%;
 	padding-bottom: 30px;
 
+	text-align: center;
+
 	& input {
-		flex-basis: 65%;
+		display: block;
+		width: 70%;
+		margin: 0 auto;
+		margin-bottom: 20px;
 		padding: 7px 10px;
 		box-sizing: border-box;
 
@@ -47,7 +47,8 @@
 	} 
 
 	& .subscribe__submit {
-		flex-basis: 30%;
+		display: inline-block;
+		padding: 7px 10px;
 
 		font-size: 9px;
 		line-height: 12px;
@@ -73,7 +74,7 @@
 
 @media (min-width: $tablet-width) {
 	.subscribe__title {
-		margin-bottom: 50px;
+		margin-bottom: 40px;
 
 		font-size: 30px;
 		line-height: 60px;
@@ -81,9 +82,12 @@
 
 	.subscribe__form {
 		width: 500px;
+		margin: 0 auto;
 		padding-bottom: 50px;
 
 		& input {
+			width: 100%;
+			margin: 0 auto 30px;
 			padding: 12px 20px;
 		
 			font-size: 14px;
@@ -91,7 +95,8 @@
 		} 
 
 		& .subscribe__submit {
-			
+			padding: 12px 20px;
+
 			font-size: 13px;
 			line-height: 17px;
 		}
@@ -100,10 +105,9 @@
 
 @media (min-width: $desktop-width) {
 	.subscribe__container {
-		justify-content: space-between;
-		width: 1110px;
+		
 		padding: 50px 135px 0; 
-		margin: 0 auto 80px;
+		margin-bottom: 80px;
 	}
 
 	.subscribe__title {

@@ -1293,31 +1293,26 @@ img {
   background-color: #f4f4f4; }
 
 .subscribe__container {
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-          justify-content: center;
   margin-bottom: 30px;
   padding: 0 10px;
-  padding-top: 40px; }
+  padding-top: 40px;
+  text-align: center; }
 
 .subscribe__title {
-  margin-bottom: 40px;
+  display: block;
+  margin-bottom: 30px;
   font-family: 'montserratbold';
   font-size: 20px;
   line-height: 40px; }
 
 .subscribe__form {
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  text-align: center; }
   .subscribe__form input {
-    flex-basis: 65%;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px;
     padding: 7px 10px;
     box-sizing: border-box;
     font-size: 10px;
@@ -1329,7 +1324,8 @@ img {
     .subscribe__form input:hover, .subscribe__form input:focus {
       outline-color: lightblue; }
   .subscribe__form .subscribe__submit {
-    flex-basis: 30%;
+    display: inline-block;
+    padding: 7px 10px;
     font-size: 9px;
     line-height: 12px;
     text-transform: uppercase;
@@ -1345,27 +1341,28 @@ img {
 
 @media (min-width: 660px) {
   .subscribe__title {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-size: 30px;
     line-height: 60px; }
   .subscribe__form {
     width: 500px;
+    margin: 0 auto;
     padding-bottom: 50px; }
     .subscribe__form input {
+      width: 100%;
+      margin: 0 auto 30px;
       padding: 12px 20px;
       font-size: 14px;
       line-height: 17px; }
     .subscribe__form .subscribe__submit {
+      padding: 12px 20px;
       font-size: 13px;
       line-height: 17px; } }
 
 @media (min-width: 1380px) {
   .subscribe__container {
-    -webkit-box-pack: justify;
-            justify-content: space-between;
-    width: 1110px;
     padding: 50px 135px 0;
-    margin: 0 auto 80px; }
+    margin-bottom: 80px; }
   .subscribe__title {
     line-height: 30px; } }
 
